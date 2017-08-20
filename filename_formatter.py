@@ -9,6 +9,8 @@ def clean_str(string):
     string = re.sub(r"!", "", string)
     string = re.sub(r"\(", "", string)
     string = re.sub(r"\)", "", string)
+    string = re.sub(r"\[", "", string)
+    string = re.sub(r"\]", "", string)
     string = re.sub(r"\?", "", string)
     string = re.sub(r":", "", string)
     string = re.sub(r" - ", "-", string)
