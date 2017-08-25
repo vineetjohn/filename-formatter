@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import re
 import sys
+
 
 def clean_str(string):
     string = re.sub(r"'", "", string)
@@ -21,5 +22,6 @@ def clean_str(string):
     string = re.sub(r"\.-", "-", string)
 
     return string.lower()
+
 
 print(clean_str(sys.argv[1]))

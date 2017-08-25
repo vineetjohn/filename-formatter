@@ -1,10 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from filename_formatter import clean_str
 
 import sys
 import os
 import shutil
+
 
 def clean_dir(directory_path):
     new_directory_path = clean_str(directory_path)
